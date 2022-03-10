@@ -1,0 +1,144 @@
+.stake .cards {
+  margin-top: 80px;
+  max-width: 900px;
+}
+
+.stake .accordion-body {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stake .accordion-body .acc-box {
+  max-width: 300px;
+  background-color: #1b1e25;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+body.light .stake .accordion-body .acc-box {
+  background-color: rgb(240, 240, 240);
+}
+
+.stake .accordion-body input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: 2px solid var(--text);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  color: var(--text);
+}
+
+.stake .title {
+  color: var(--text);
+  font-size: 0.7rem;
+}
+
+.stake .data {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.stake .info-card1,
+.info-card2,
+.info-card3 {
+  border-radius: 1.2rem;
+  padding: 1rem 0.5rem;
+}
+
+.stake .info-card1 {
+  background-color: rgb(51, 120, 53);
+}
+
+.stake .info-card2 {
+  background-color: rgb(177, 162, 43);
+}
+.stake .info-card3 {
+  background-color: rgb(44, 145, 150);
+}
+
+body.light .stake .info-card1 {
+  background-color: rgb(190, 255, 193);
+}
+
+body.light .stake .info-card2 {
+  background-color: rgb(255, 246, 177);
+}
+
+body.light .stake .info-card3 {
+  background-color: rgb(209, 253, 255);
+}
+
+.stake .cards .circle,
+.stake .circle2 {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+.stake .cards .circle img,
+.stake .circle2 img {
+  width: 100%;
+  height: auto;
+}
+
+.stake .cards .circle2 {
+  margin-left: -8px;
+}
+
+.stake .stake-btn button {
+  padding: 0.5rem;
+}
+
+.stake .stake-btn {
+  width: 35%;
+  text-align: center;
+}
+
+.stake .stake-btn i {
+  color: var(--text);
+}
+
+.stake .silent {
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 766px) {
+  .stake .stake-btn {
+    width: 100%;
+  }
+
+  .stake .tvl {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .stake .ps-lg-5 {
+    padding-left: 6rem !important;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .stake .ps-lg-5 {
+    padding-left: 3rem !important;
+  }
+}

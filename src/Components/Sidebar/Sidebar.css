@@ -1,0 +1,141 @@
+.sidebar {
+    background-color: #05050b;
+    height: 95%;
+    border-radius: 13px;
+    position: fixed;
+    overflow: hidden;
+    backdrop-filter: blur(0.3rem);
+    width: 12rem;
+    z-index: 1;
+}
+
+
+/* Middle */
+
+.sidebar .middle {
+    height: 76%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+/* Middle */
+
+
+/* Navs */
+
+.nav_li {
+    display: flex;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    min-width: fit-content;
+    justify-content: start;
+}
+
+.nav_li:hover {
+    background-color: #232328;
+}
+
+
+/* Active Nav */
+
+.sidebar .active {
+    background-color: #2a2a34;
+}
+
+.ext-link.active {
+    background-color: transparent;
+}
+
+.sidebar .nav_li.active:hover {
+    background-color: #4c4c58;
+}
+
+.sidebar .nav_li .fa,
+.fas,
+img {
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+    width: 20px !important;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Bottom  */
+
+.sidebar .bottom {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+.sidebar .bottom .avatar {
+    height: 35px;
+    width: 35px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.sidebar .bottom .profile {
+    background-color: #19191f;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.sidebar .bottom .profile:hover {
+    background-color: #2d2d32;
+}
+
+.sidebar .bottom .profile p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.sidebar .silent {
+    color: #5c636a;
+    font-size: 0.7rem !important;
+}
+
+
+/* Bottom */
+
+
+/* Divide */
+
+.sidebar .divider-div {
+    border-top: 1px solid #5c636a;
+    border-bottom: 1px solid #5c636a;
+    padding: 0.4rem 0;
+    font-size: 0.8rem;
+}
+
+.sidebar .divider-div .nav_li {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+
+/* Accordion */
+
+.accordion-button:focus {
+    border: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.accordion-button::after {
+    background-image: url(https://img.icons8.com/external-those-icons-lineal-those-icons/344/ffffff/external-down-arrows-those-icons-lineal-those-icons-1.png);
+    margin-left: 0.5rem;
+    background-size: 1rem;
+    background-position: center;
+}

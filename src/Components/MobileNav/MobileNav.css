@@ -1,0 +1,34 @@
+.mob-nav .sidebar {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  min-width: fit-content;
+  border-radius: 0;
+  padding: 0 1rem;
+}
+
+.mob-nav .menu.open {
+  transform: translateY(0);
+}
+
+.mob-nav .menu {
+  background-color: #05050b;
+  position: absolute;
+  height: 100vh;
+  top: -16px;
+  padding: 1rem;
+  min-width: 300px;
+  transition: 0.5s ease;
+  transform: translateY(-100%);
+  left: -20px;
+  z-index: 5;
+  width: 360px;
+}
+
+.mob-nav .nav_li {
+  font-size: 1rem;
+}
+
+.mob-nav .sidebar .accordion-button {
+  margin-left: 2rem !important;
+}

@@ -1,0 +1,98 @@
+.wrap .cards {
+  margin-top: 80px;
+  max-width: 800px;
+}
+
+.wrap .title {
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.wrap .data {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.wrap .wrap-card1,
+.wrap-card2,
+.wrap-card3 {
+  border-radius: 1.2rem;
+  padding: 1rem 0.5rem;
+}
+
+.wrap .wrap-card1 {
+  background-color: rgb(116, 51, 120);
+}
+
+.wrap .wrap-card2 {
+  background-color: rgb(177, 162, 43);
+}
+.wrap .wrap-card3 {
+  background-color: rgb(44, 145, 150);
+}
+
+body.light .wrap .wrap-card1 {
+  background-color: rgb(252, 201, 255);
+}
+
+body.light .wrap .wrap-card2 {
+  background-color: rgb(255, 246, 177);
+}
+
+body.light .wrap .wrap-card3 {
+  background-color: rgb(209, 253, 255);
+}
+
+/* Button with fill Animation */
+.cw-btn {
+  display: inline-block;
+  padding: 0.5rem 1.6rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  border: 2px solid var(--text);
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+  border-radius: 15px;
+}
+
+.cw-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ac6849;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.cw-btn:hover::before {
+  transform: translateX(0);
+}
+
+@media only screen and (max-width: 766px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wrap .ps-lg-5 {
+    padding-left: 6rem !important;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .wrap .ps-lg-5 {
+    padding-left: 3rem !important;
+  }
+}
